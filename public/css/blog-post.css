@@ -1,0 +1,14 @@
+body {
+    padding-top: 70px;
+}
+
+footer {
+	text-align: center;
+    margin: 50px 0;
+}
+
+
+.glyphicon-qrcode{
+	font-size: 22px;
+	line-height: 0;
+}
