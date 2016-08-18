@@ -4,11 +4,16 @@
 <div class="login">
 	<h1>Inscription</h1>
     <form method="post">
-    	<input type="text" name="u" placeholder="Pseudo" required="required" />
-    	<input type="email" name="m" placeholder="Adresse mail" required="required" />
-    	<input type="email" name="m2" placeholder="Adresse mail confirmation" required="required" />
+    	<input type="text" name="u" placeholder="Pseudo" value="<?php echo $pasPseud ?>" required="required" />
+    	
+    	<input type="email" name="m" placeholder="Adresse mail" value="<?php echo $pasMail ?>" required="required" />
+    	
+    	<input type="email" name="m2" placeholder="Adresse mail confirmation" value="<?php echo $pasMail2 ?>" required="required" />
+        
         <input type="password" name="p" placeholder="Mot de passe" required="required" />
+        
         <input type="password" name="p2" placeholder="Mot de passe confirmation" required="required" />
+        
         <button type="submit" name="register" class="btn btn-primary btn-block btn-large">M'enregistrer</button>
     </form>
 </div>
