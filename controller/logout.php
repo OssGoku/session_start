@@ -1,3 +1,4 @@
 <?php
-	require('view/logout.phtml');
+	session_destroy();
+	require('view/accueil.phtml');
 ?>

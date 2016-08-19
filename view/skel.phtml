@@ -72,27 +72,32 @@
 					transition: box-shadow .5s ease;
 				}
 				input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
-
 				a{
 					text-decoration: none;
 				}
-
 				hr{
 					opacity: 0.2;
 					border-color: gray;
 				}
-
 				.red{
 					color: red;
 					font-size: 12px;
 				}
+				.navbar p{
+					padding: 15px 0 0 15px;
+					text-align: right;
+				}
+				.blue{
+					color: #66A7D9;
+				}
+
 		    </style>
 	    
 		<script src="js/prefixfree.min.js"></script>
 	</head>
 
 	<body>
-		<?php require('controller/header.php'); ?>
+		
 		<?php require('controller/content.php'); ?>
 	    <script src="js/index.js"></script>
 	</body>

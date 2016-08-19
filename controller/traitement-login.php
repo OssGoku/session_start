@@ -6,7 +6,7 @@
 	if (isset($_POST["login"])){
 		$name = $_POST["u"];
 		$password = $_POST['p'];
-		var_dump($_POST);
+		// var_dump($_POST);
 
 		for($i = 0; $i < sizeof($tableau); $i++){
 			if($name === $tableau[$i]['pseudo'] && $password === $tableau[$i]['pass']){
@@ -16,7 +16,7 @@
 				$_SESSION['email'] = $tableau[$i]['email'];
 				$_SESSION['time'] = time();
 
-				header("Location: index.php?page=accueil_in");
+				header("Location: index.php?page=accueil");
 				exit;
 			}
 		}
